@@ -4,8 +4,6 @@ macos_sources = glob([
 
 macos_exported_linker_flags = [
   '-framework', 'Foundation',
-  '-framework', 'CoreFoundation',
-  '-framework', 'Cocoa',
   '-framework', 'AppKit',
   '-framework', 'IOKit',
 ]
