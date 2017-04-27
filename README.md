@@ -91,6 +91,14 @@ Android:
 1. Run CMake with the following options: `cmake -DCMAKE_TOOLCHAIN_FILE=../extern/cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=Debug -DANDROID_ABI="armeabi-v7a" -DANDROID_NATIVE_API_LEVEL=android-19 -DANDROID_STL="gnustl_static"`
 1. Follow the normal build steps above.
 
+Alternatively, Gainput can be built with [Buck](https://buckbuild.com/).
+
+```
+buck build :gainput
+buck run test
+buck run samples/basic
+```
+
 Contributing
 ------------
 
@@ -116,4 +124,3 @@ Alternatives
 
 - [OIS](https://github.com/wgois/Object-oriented-Input-System--OIS-)
 - [SDL](http://www.libsdl.org/)
-

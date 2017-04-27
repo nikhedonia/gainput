@@ -1,0 +1,13 @@
+cxx_binary(
+  name = 'basic',
+  platform_srcs = [
+    ('default', ['basicsample_linux.cpp']),
+    ('^android.*', ['basicsample_android.cpp']),
+    ('^macos.*', ['basicsample_mac.mm']),
+    ('^linux.*', ['basicsample_linux.cpp']),
+    ('^windows.*', ['basicsample_win.cpp']),
+  ],
+  deps = [
+    '//:gainput',
+  ],
+)

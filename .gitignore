@@ -15,4 +15,8 @@ gainput.sln
 gainput.unsuccessfulbuild
 *.opensdf
 cmakebuild*/
-
+/buck-out/
+/.buckd/
+/buckaroo/
+.buckconfig.local
+BUCKAROO_DEPS

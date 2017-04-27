@@ -1,0 +1,10 @@
+cxx_binary(
+  name = 'test',
+  srcs = glob([
+    '*.cpp',
+  ]),
+  deps = [
+    '//:gainput',
+    '//extern/catch:catch',
+  ],
+)
